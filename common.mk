@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # Alert slider
-ifneq ($(TARGET_IS_TABLET),true)
+ifneq ($(TARGET_HAS_NO_ALERT_SLIDER),true)
 PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key-calibrate
